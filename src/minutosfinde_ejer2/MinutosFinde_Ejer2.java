@@ -42,15 +42,15 @@ public class MinutosFinde_Ejer2 {
                 System.out.print("Dia incorrecto");
         }
 
-        System.out.println("Introduzca la hora (hora y minutos)");
-        
+        System.out.println("Introduzca la hora");
+        System.out.print("Hora: ");
         int hora;
         hora = sc.nextInt();
-        System.out.print("Hora: ");
         
+        System.out.print("Minutos: ");
         int minutos;
         minutos = sc.nextInt();
-        System.out.print("Minutos: ");
+        
         
 
         int minTot = (4 * 24 * 60) + (15 * 60);
