@@ -43,14 +43,23 @@ public class MinutosFinde_Ejer2 {
         }
 
         System.out.println("Introduzca la hora");
-        System.out.print("Hora: ");
+        
         int hora;
-        hora = sc.nextInt();
         
-        System.out.print("Minutos: ");
+        
+       
+       do {
+           System.out.print("Hora: ");
+           hora = sc.nextInt();
+       } while (hora < 0 || hora > 23);
+       
+        
         int minutos;
-        minutos = sc.nextInt();
-        
+    
+       do {
+           System.out.println("Minutos: ");
+           minutos = sc.nextInt();
+       } while (minutos < 0 || minutos > 59);
         
 
         int minTot = (4 * 24 * 60) + (15 * 60);
